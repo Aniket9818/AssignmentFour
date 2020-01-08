@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hamrologo"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hamrobazar"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hamrobazar1"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="By using Hamrobazar.com App/Service implifies that
+you hav read and accepted out Terms of Use, Safety Tips and Ad Posting Rules."
+        android:textAlignment="center"
+        android:textColor="#FF4500"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

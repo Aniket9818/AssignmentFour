@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Hamrobazar</string>
+    <string name="app_name">HamroBazar</string>
+
+    <string name="Terms">
+
+
+
+<b>Welcome to hamrobazar.com ("Hamrobazar / Site").</b> By using Hamrobazar through website or from any electronic devices (like but not limited to mobile phone application), you acknowledge, understand and agree to following Terms of Use ("Terms").\n\n
+
+Hamrobazar may change or modify the Terms in the future and for any or no reason by posting revisions here. Your continued use of the Site constitutes your acceptance of the revised Terms. You should visit this page and review the Terms from time to time.\n\n
+Acceptance Through Use
+By posting or viewing a classified advertisement on the Site (an "Ad" or "Ads"), you agree to be bound by all of the terms, conditions and notices contained or referenced in these Terms. If you do not accept all of the Terms, you are not authorized to post or view any Ads and shall discontinue using this Site immediately.\n\n
+
+<b>Eligibility / Minimum Age</b>\n
+
+Hamrobazar is not directed to, and is not authorized to post or view Ads, by anyone under the age of eighteen (18) and
+If you are using Hamrobazar on behalf of a legal entity, you shall be responsible to obtain necessary authority to post or retrieve any information on the Site and you agree to be accountable for those information.
+\n\n
+        <b>Understanding of Platform</b>b\n
+
+You agree and understand that Hamrobazar is an internet classified platform that facilitates communication between users for the purpose of advertising and sharing information related to goods and/ or services.\n\n
+
+Hamrobazar do not endorse or promote any of the listings, or information posted by users. These users (including You) are third parties and are not related to Hamrobazar or its affiliates. You agree not to hold Hamrobazar responsible for information posted by these users or for their act in any circumstances.\n\n
+
+You further understand that Hamrobazar is not involved in transaction of any goods / services listed in the Site. You will be directly contacting users who have posted advertisement regarding their goods or services offering.\n\n
+
+If you are using information from Site, in order to communicate / sale / purchase any goods or services from other users, we strongly encourage you take necessary precaution to protect yourself. We recommend that you read our Safety Tips before doing any transaction with other users.\n\n
+
+        <i>You hereby grant Hamrobazar a worldwide, royalty-free, perpetual, irrevocable, non- exclusive, transferable, sub-licensable right and license (the "License") to use, license, distribute, copy, reproduce, transmit, translate, publicly display, publicly perform, publish and prepare derivative works of Your Content in connection with the Site as well as on any of affiliates or partners websites, publications and mobile platform in any formats and through any media channels. We need these rights with respect to Your Content in order to host and display content.</i>\n\n
+
+    </string>
 </resources>
