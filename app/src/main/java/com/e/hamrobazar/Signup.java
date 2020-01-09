@@ -2,10 +2,18 @@ package com.e.hamrobazar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.loader.content.CursorLoader;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,72 +21,48 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Signup extends AppCompatActivity {
-    private CheckBox cb1, cb2, cb3;
-    private Button btnRregister;
-    private ImageView imgProfile;
-    private EditText etREmail, etName, etRPassword, etRCPassword, etPhone, etMphone, etAddress, etAddress1, etAddress2;
+import java.io.File;
+import java.io.IOException;
 
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class Signup extends AppCompatActivity {
+
+    private EditText etEmail, etFullName, etPassword, etRePassword, etPhone, etMobile, etAddress3, etAddress1, etAddress2;
+    ImageView imgProfile;
+    CheckBox cboTerms;
+    Button btnRegister;
+    String imagePath;
+    private String imageName = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        etREmail=findViewById(R.id.etREmail);
-        etName=findViewById(R.id.etREmail);
-        etRPassword=findViewById(R.id.etRPassword);
-        etRCPassword=findViewById(R.id.etRCPassword);
-        etPhone=findViewById(R.id.etPhone);
-        etAddress=findViewById(R.id.etAddress);
-        etAddress1=findViewById(R.id.etAddress1);
-        etAddress2=findViewById(R.id.etAddress2);
-        cb1=findViewById(R.id.cb1);
-        cb2=findViewById(R.id.cb2);
-        cb3=findViewById(R.id.cb3);
+        getSupportActionBar().setTitle("Register New Account");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        etEmail = findViewById(R.id.etEmail);
+        etFullName = findViewById(R.id.etFullName);
+        etPassword = findViewById(R.id.etPassword);
+        etRePassword = findViewById(R.id.etRePassword);
+        etPhone = findViewById(R.id.etPhone);
+        etMobile = findViewById(R.id.etMobile);
+        etAddress1 = findViewById(R.id.etAddress1);
+        etAddress2 = findViewById(R.id.etAddress2);
+        etAddress3 = findViewById(R.id.etAddress3);
         imgProfile = findViewById(R.id.imgProfile);
-        btnRregister=findViewById(R.id.btnRregister);
-        imgProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BrowseImage();
-            }
-        });
+        cboTerms = findViewById(R.id.cboTerms);
+        btnRegister = findViewById(R.id.btnRegister);
 
 
 
 
 
-
-
-        cb1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (cb1.isChecked()){
-
-                }
-            }
-        });
-
-    }
-
-    private void BrowseImage(){
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType("image/*");
-        startActivityForResult(intent, 0);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(resultCode == RESULT_OK){
-            if (data == null){
-                Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT).show();
-            }
-
-        }
-
-        Uri uri = data.getData();
-        imgProfile.setImageURI(uri);
     }
 }

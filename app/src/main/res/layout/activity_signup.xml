@@ -30,7 +30,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etREmail"
+        android:id="@+id/etEmail"
         android:textSize="24sp"
         />
 
@@ -45,7 +45,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etName"
+        android:id="@+id/etFullName"
         android:textSize="24sp"
         />
 
@@ -68,6 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Confirm password:"
+        android:inputType="textPassword"
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -75,8 +76,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etRCPassword"
+        android:id="@+id/etRePassword"
         android:textSize="24sp"
+        android:inputType="textPassword"
         />
 
     <TextView
@@ -105,29 +107,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etMphone"
+        android:id="@+id/etPhone"
         android:textSize="24sp"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address 1 (Street Name):"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etAddress"
-        android:textSize="24sp"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Address (Area Location):"
+        android:text="Mobile Phone "
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -142,7 +129,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address (City Name):"
+        android:text="Address 2(Area Location):"
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -151,6 +138,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etAddress2"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address 3 (City Name):"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAddress3"
         android:textSize="24sp"
         />
 
@@ -167,7 +169,6 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cb1"
         android:text="I do not want to subscribe to site newsletter."
         android:textSize="20sp"
         />
@@ -175,7 +176,6 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cb2"
         android:text="Hide my phone number (only contact me through email"
         android:textSize="20sp"
         />
@@ -183,14 +183,14 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cb3"
+        android:id="@+id/cboTerms"
         android:text="I have read and agree to terms of use."
         android:textSize="20sp"
         android:textStyle="bold"
         />
 
     <Button
-        android:id="@+id/btnRregister"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
