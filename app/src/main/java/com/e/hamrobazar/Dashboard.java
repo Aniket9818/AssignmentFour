@@ -41,15 +41,15 @@ public class Dashboard extends AppCompatActivity {
         btnDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                View expandableView = null;
-                if (expandableView.getVisibility() == View.GONE) {
+
+                if (expandableViews.getVisibility() == View.GONE) {
                     TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                    expandableView.setVisibility(View.VISIBLE);
+                    expandableViews.setVisibility(View.VISIBLE);
                     btnUpArrows.setVisibility(View.VISIBLE);
                     btnDown.setVisibility(View.GONE);
                 } else {
                     TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                    expandableView.setVisibility(View.GONE);
+                    expandableViews.setVisibility(View.GONE);
                     btnUpArrows.setVisibility(View.GONE);
                 }
             }
@@ -58,10 +58,10 @@ public class Dashboard extends AppCompatActivity {
         btnUpArrows.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                View expandableView = null;
-                if (expandableView.getVisibility()==View.VISIBLE){
+
+                if (expandableViews.getVisibility()==View.VISIBLE){
                     TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                    expandableView.setVisibility(View.GONE);
+                    expandableViews.setVisibility(View.GONE);
                     btnUpArrows.setVisibility(View.GONE);
                     btnDown.setVisibility(View.VISIBLE);
                 }

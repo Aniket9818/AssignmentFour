@@ -130,7 +130,7 @@
                             android:textSize="18sp"
                             android:layout_marginBottom="5sp"
                             android:layout_gravity="center"
-                            android:drawableLeft="@drawable/house2"/>
+                            android:drawableLeft="@drawable/homes"/>
                         <TextView
                             android:layout_width="330sp"
                             android:layout_height="40sp"

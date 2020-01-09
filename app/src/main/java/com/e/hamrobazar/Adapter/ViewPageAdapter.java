@@ -15,7 +15,7 @@ import com.e.hamrobazar.R;
 public class ViewPageAdapter extends PagerAdapter {
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer[] images = {};
+    private Integer[] images = {R.drawable.hamro, R.drawable.hamro1, R.drawable.hamro2};
 
     public ViewPageAdapter(Context context) {
         this.context = context;
