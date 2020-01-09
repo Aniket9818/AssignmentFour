@@ -57,7 +57,7 @@
         <CheckBox
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:id="@+id/checkFirst"
+            android:id="@+id/cTerms"
             android:textColor="#FFFFFF"
             android:layout_marginTop="30dp"
             android:padding="10dp"
@@ -67,7 +67,7 @@
         <CheckBox
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:id="@+id/checkSecond"
+            android:id="@+id/cSafety"
             android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:padding="10dp"
@@ -77,7 +77,7 @@
         <CheckBox
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:id="@+id/checkThird"
+            android:id="@+id/cRules"
             android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:padding="10dp"
