@@ -10,7 +10,8 @@ public class TermThree extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_term_three);
-        getSupportActionBar().setTitle("Terms & Condition for Use");
+
+        getSupportActionBar().setTitle("Rules for Posting Ad");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

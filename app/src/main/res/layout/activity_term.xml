@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Term">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="34dp"
+            android:src="@drawable/hamrologo"/>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Hamrobazar App"
+            android:textColor="#3ea4c4"
+            android:textSize="32sp"
+            android:layout_marginLeft="13sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for installing Hamrobazar App."
+            android:layout_marginTop="15dp"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Before you can start using our online platform, please read our terms of service and accept it."
+            android:textSize="17sp"/>
+
+        <CheckBox
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/checkFirst"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Click to view Terms of Use"
+            android:background="#cccccc"/>
+        <CheckBox
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/checkSecond"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Click to view Safety Tips"
+            android:background="#cccccc"/>
+        <CheckBox
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/checkThird"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Click to view Ad Posting Rule"
+            android:background="#cccccc"/>
+
+        <Button
+            android:id="@+id/btnAgreement"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:text="I have read &amp; agree to above terms."
+            android:padding="20dp"
+            android:background="#1ca9c9"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,6 +9,7 @@
     tools:context=".LoginPage">
 
     <EditText
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etEmail"
@@ -18,6 +19,7 @@
         />
 
     <EditText
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etPassword"
@@ -27,6 +29,7 @@
         />
 
     <Button
+        android:layout_margin="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnLogin"

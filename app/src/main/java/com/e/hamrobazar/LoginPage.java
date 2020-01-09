@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,8 +18,8 @@ public class LoginPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_login_page);
-
 
 
         etEmail=findViewById(R.id.etEmail);
@@ -27,6 +28,15 @@ public class LoginPage extends AppCompatActivity {
         btnLogin=findViewById(R.id.btnLogin);
         btnForgot=findViewById(R.id.btnForgot);
         btnRegister=findViewById(R.id.btnRegister);
+
+        //----------POPUP---------------------
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+        int width = dm.widthPixels;
+        int height = dm.heightPixels;
+
+        getWindow().setLayout((int) (width * .9), (int) (height * .9));
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,5 +60,9 @@ public class LoginPage extends AppCompatActivity {
 
             }
         });
+
     }
-}
+
+
+    }
+

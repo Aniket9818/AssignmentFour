@@ -29,4 +29,78 @@ If you are using information from Site, in order to communicate / sale / purchas
         <i>You hereby grant Hamrobazar a worldwide, royalty-free, perpetual, irrevocable, non- exclusive, transferable, sub-licensable right and license (the "License") to use, license, distribute, copy, reproduce, transmit, translate, publicly display, publicly perform, publish and prepare derivative works of Your Content in connection with the Site as well as on any of affiliates or partners websites, publications and mobile platform in any formats and through any media channels. We need these rights with respect to Your Content in order to host and display content.</i>\n\n
 
     </string>
+
+    <string name="second_aggrement">
+
+
+Hamrobazar.com provides online platform which helps buyers  sellers to meet with each other. However, it is always a good idea to take some precaution before conducting any transaction. Below are several safety guidelines. This is not a complete list. We advise you to always use common sense, sound judgment and trust your instincts.\n\n
+
+        <b>
+Hamrobazar does not offer any kind of buyer protection.
+Hamrobazar is not involved in buying or selling activities nor does it act as a middleman. Just like any newspaper classifieds, all the ads are posted by users for information purpose. These users are solely responsible for their ad content and their acts, without any liability on our part.\n\n
+</b>
+        <b>
+Avoid fraud  scams.\n
+        </b>
+Don’t assume without confirmation that ad content and picture displayed are true and accurate. \n Ask questions to ad poster for more details if you have any doubt on your mind. Make yourself aware of common scams and fraud practices. Be suspicious of:\n\n
+        <b>•</b>Sellers who has provided incomplete address, do not have a verified mobile number, has mentioned phone numbers on ad description only.\n
+<b>•</b>Ads demanding you to make advance payment.\n
+<b>•</b>Ads promising large sum of money, lottery/get rich scheme, too good to be true opportunities (ad related to foreign employment, visa  migration, high return on investments, etc).\n
+<b>•</b>Ads trying to sell stolen goods at low prices. When in doubt ask the owner to provide documents which shows proof of purchase (like bill, warranty card).\n
+<b>•</b>Ads trying to sell cheap, fake and imitation products as original. Apply the most simple rule – “If something sounds too good to be true, it probably is suspicious”\n\n
+
+        <b>
+Meet in-person and at a public place.\n\n
+        </b>
+While buying or selling through hamrobazar, it is most likely that you will be meeting a stranger. It is advisable to learn as much as you can about the person whom you are meeting or trading with. Ask the person about his work place, profession, etc. If in doubt, ask the person to show his identification document like license and citizenship.\n\n
+For your personal safety, always meet buyer/seller in public places (restaurant, office, shops, etc) where other people are present.
+Always carry a cell phone with you. If possible take a friend along. Do inform someone from your family or friend about the person you are meeting and where you are going.\n\n
+        <i>
+Try not to arrange meeting at home or isolated places. If required, make sure you are not alone. If you feel something suspicious, stop immediately.
+Some of the users are marked with  status. We have obtained basic identity documents from these users. It is preferable to transact with them.</i>
+    </string>
+
+
+    <!--    End of Second Agreement     -->
+
+
+    <string name="third_agreement">
+
+        <b>
+Hamrobazar does not allow posting of ads that are considered illegal as per Nepalese law and/or are not permitted as per below Ad posting rules. Any user found violating these rules will be subjected to action/s mentioned below.\n\n
+
+1. Multiple (duplicate/repeat) ad posting.\n</b>
+Users are not allowed to post more than 1 (one) similar active ad. Similar active ad are defined as ads selling or looking for same product or service, even if these ad contain different text or images and/or is posted from same or different account by a user.\n\n
+
+Each user is only allowed to post an ad similar to his/her previous ad if the previous one has been marked as sold, has been deleted or has already expired.\n\n
+<b>
+2. Misleading and fraudulent ads.</b>\n
+Some of the ads (but not limited) which fall under this are:\n\n
+
+<b>•</b>Ads title, price and content must be related. For e.g. posting ad with title Iphone 5 with irrelevant price Rs. 200 is not allowed.\n
+<b>•</b>Ads title should not include Price or Phone numbers, there is separate field for that.\n
+<b>•</b>Ads posted with marketing gimmick words with sole purpose of grabbing other user attention. For e.g. posting ad "Best opportunity of your life", "Click this to earn money", "Call me soon", "Don't miss out" etc.\n
+<b>•</b>Ads with Inaccurate/wrong prices. You need to clearly mention the price in your ad. For e.g. posting ad with price Rs. 5,000 but when later contacted you are asking another price.\n
+<b>•</b>Ads with Incorrect/wrong item condition mentioned. For e.g. posting used goods as Brand New, not disclosing defectiveness of goods.\n
+<b>•</b>Ads selling stolen and illegal goods.\n
+<b>•</b>Ads selling fake, replica and counterfeited goods by representing them as original.\n
+<b>•</b>Ads with sole purpose of leading user to another website or generate downloads without actual sale of product or service.\n
+<b>•</b>Ads which have Images unrelated with the ad content. Posting graphic (violent or adult oriented) images are not allowed.\n\n
+
+        <b>
+3. Mis-categorized (wrong category) ads.\n</b>
+<b>•</b>Ads must be posted in the correct category. For e.g. posting a Bike ad in Mobile category, or office table in Home Furniture category is considered as mis-categorized ad. If you are unsure which category your ads belongs to, kindly search for existing ads to know where other users have posted similar ad.\n If your ad falls under more than one category, select the best and post your ad only in that category.\n\n
+
+        <b>
+4. Posting illegal or morally obscene ads.\n</b>
+Hamrobazar does not allow ads which are illegal as per Nepal law or are considered morally obscene in context to Nepalese society. Some of the ads (but not limited to) which fall under are:\n\n
+<b>•</b>Ads for Prostitution, obscene items or any form of adult entertainment ads like escort, indecent massages, pornography, sexual items, etc.\n
+<b>•</b>Ads which hurt the sentiments of any person, group or religion.\n
+<b>•</b>Ads selling illegal items like weapons, drugs, human organs, endangered animals, prohibited antiques, black marketing, etc.\n
+<b>•</b>Ads which infringes other third parties intellectual property, moral right and privacy.\n\n
+
+        <b>
+5. Pyramid, referral marketing and other duping nature ads.\n</b>
+Any ads (even genuine) which promote scheme which are of pyramid in nature and operate on basis of referrals. Such ads usually ask other user to join a program either to earn money or gift with end purpose of duping the user.
+    </string>
 </resources>

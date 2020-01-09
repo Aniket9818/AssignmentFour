@@ -10,5 +10,8 @@ public class TermTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_term_two);
+
+        getSupportActionBar().setTitle("Safety Tips for Transcation");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

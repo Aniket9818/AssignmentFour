@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/logos"/>
+        <ImageView
+            android:layout_width="63sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:id="@+id/btnUser"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:id="@+id/myImgView"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_marginTop="10sp"
+                android:layout_width="360sp"
+                android:layout_height="wrap_content"
+                android:background="#E6E6E6"
+                android:layout_gravity="center"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10sp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="330sp"
+                        android:layout_height="wrap_content"
+                        android:hint="Find what you are looking for?"
+                        android:textSize="18sp"
+                        android:drawableRight="@drawable/search"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="330sp"
+                        android:layout_height="40sp"
+                        android:text="Post FREE Ad"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ads"/>
+                    <TextView
+                        android:layout_width="330sp"
+                        android:layout_height="40sp"
+                        android:text="Mobile Handset"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/mobiles"/>
+                    <TextView
+                        android:layout_width="330sp"
+                        android:layout_height="40sp"
+                        android:text="Laptop/Notebooks"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/laptops"/>
+
+                    <Button
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/ic_arrow_downward_black_24dp"
+                        android:id="@+id/btnDownArrow"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/expandableView"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="330sp"
+                            android:layout_height="40sp"
+                            android:text="Rental Houses"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/home"/>
+                        <TextView
+                            android:layout_width="330sp"
+                            android:layout_height="40sp"
+                            android:text="Furniture for Home"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/furnitures"/>
+                        <TextView
+                            android:layout_width="330sp"
+                            android:layout_height="40sp"
+                            android:text="Houses for Sale"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/house2"/>
+                        <TextView
+                            android:layout_width="330sp"
+                            android:layout_height="40sp"
+                            android:text="See More Categories"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/more"/>
+
+                        <Button
+                            android:layout_width="50sp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:background="@drawable/ic_arrow_downward_black_24dp"
+                            android:id="@+id/btnUpArrow"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

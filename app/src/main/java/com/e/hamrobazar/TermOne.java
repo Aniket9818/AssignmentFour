@@ -10,5 +10,8 @@ public class TermOne extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_term_one);
+
+        getSupportActionBar().setTitle("Terms & Condition for Use");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
