@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.e.hamrobazar.Bll.Loginbll;
+import com.e.hamrobazar.StrictMode.StrictModeClass;
 
 public class LoginPage extends AppCompatActivity {
     private EditText etEmail, etPassword;
@@ -29,38 +34,51 @@ public class LoginPage extends AppCompatActivity {
         btnForgot=findViewById(R.id.btnForgot);
         btnRegister=findViewById(R.id.btnRegister);
 
-        //----------POPUP---------------------
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-
-        int width = dm.widthPixels;
-        int height = dm.heightPixels;
-
-        getWindow().setLayout((int) (width * .9), (int) (height * .9));
-
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        btnForgot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginPage.this,Signup.class);
+                Intent intent = new Intent(LoginPage.this, Signup.class);
                 startActivity(intent);
-
             }
         });
 
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login();
+            }
+        });
+    }
+
+    private void login(){
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
+
+        Loginbll loginBLL = new Loginbll();
+
+        StrictModeClass.StrictMode();
+        if (loginBLL.Authentication(email, password)) {
+            Toast.makeText(this, "User logged in", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginPage.this, MainActivity.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
+            etEmail.requestFocus();
+        }
+    }
+
+    private boolean validate() {
+        if (TextUtils.isEmpty(etEmail.getText())) {
+            etEmail.setError("Enter email");
+            etEmail.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(etPassword.getText())) {
+            etPassword.setError("Enter password");
+            etPassword.requestFocus();
+            return false;
+        }
+        return true;
     }
 
 
