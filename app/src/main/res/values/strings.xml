@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HamroBazar</string>
 
-    <string name="Terms">
+    <string name="First">
 
 
 
@@ -30,7 +30,7 @@ If you are using information from Site, in order to communicate / sale / purchas
 
     </string>
 
-    <string name="second_aggrement">
+    <string name="Second">
 
 
 Hamrobazar.com provides online platform which helps buyers  sellers to meet with each other. However, it is always a good idea to take some precaution before conducting any transaction. Below are several safety guidelines. This is not a complete list. We advise you to always use common sense, sound judgment and trust your instincts.\n\n
@@ -64,7 +64,7 @@ Some of the users are marked with  status. We have obtained basic identity docum
     <!--    End of Second Agreement     -->
 
 
-    <string name="third_agreement">
+    <string name="Third">
 
         <b>
 Hamrobazar does not allow posting of ads that are considered illegal as per Nepalese law and/or are not permitted as per below Ad posting rules. Any user found violating these rules will be subjected to action/s mentioned below.\n\n

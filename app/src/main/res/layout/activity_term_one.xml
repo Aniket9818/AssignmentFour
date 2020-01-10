@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text=""
+                android:text="@string/First"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 

@@ -47,6 +47,7 @@ public class LoginPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login();
+                validate();
             }
         });
     }
@@ -60,7 +61,7 @@ public class LoginPage extends AppCompatActivity {
         StrictModeClass.StrictMode();
         if (loginBLL.Authentication(email, password)) {
             Toast.makeText(this, "User logged in", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginPage.this, MainActivity.class);
+            Intent intent = new Intent(LoginPage.this, Dashboard.class);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
